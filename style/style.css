@@ -50,7 +50,7 @@ h3{
     padding-left: 0;
     background: transparent;
 }
-#about, #education, #contact, #workExperience, #skills, #myContactDetails{
+#about, #education, #contact, #workExperience, #skills, #myContactDetails, #Social{
     padding-top: 20px;
     padding-bottom: 20px;
     border: white solid;
@@ -341,6 +341,6 @@ form .floating-label-form-group {
     color: red;
 }
 
-.fa-youtube:hover, .fa-instagram:hover, .fa-google-plus-g:hover, .fa-twitter:hover, .fa-facebook:hover {
+fa-instagram:hover, .fa-google-plus-g:hover, .fa-twitter:hover, .fa-facebook:hover {
     color: darkgrey;
 }
