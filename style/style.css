@@ -1,0 +1,346 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700|Lato:400,700);
+html {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+p{
+    color: white;
+}
+body{
+    background-color: black;
+}
+h1{
+    font-family: 'padmaa-Bold.1.1', 'cursive';
+    font-size: 5em;
+    color: grey;
+}
+
+h2{
+    font-size: 30px;
+    color: dimgray;
+}
+h3{
+    font-size: 20px;
+    color: slategray;
+}
+
+
+#typed {
+    font-size: 40px;
+    color: orange;
+}
+
+.typed-cursor {
+    font-size: 60px;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+#info {
+    position: fixed;
+    top:50px;
+    left: 0px;
+    width: 50%;
+    text-align: left;
+    padding-left: 0;
+    background: transparent;
+}
+#about, #education, #contact, #workExperience, #skills, #myContactDetails{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: white solid;
+    border-radius: 15%;
+    margin: 0 10%;
+    width: 80%;
+}
+
+.arrow-down{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.arrow-down::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 0;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    animation-name: arrow;
+    animation-delay: 60s;
+}
+
+
+/* End Keyframes */
+@-webkit-keyframes arrow{
+0%, 100%{
+    top: 50px;
+}
+    50%{
+        top: 80px;
+    }
+}
+@keyframes arrow {
+    0%, 100%{
+        top:50px;
+    }
+    50%{
+        top: 80px;
+    }
+    
+}
+@-moz-keyframes arrow {
+    100%{
+        top: auto;
+    }
+}
+@media (min-width: 360px) {
+    #typed {
+        font-size: 10px;
+    }
+
+    .typed-cursor {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 540px) {
+    #typed {
+        font-size: 20px;
+    }
+
+    .typed-cursor {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    #typed {
+        font-size: 30px;
+    }
+
+    .typed-cursor {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    #typed {
+        font-size: 40px;
+    }
+
+    .typed-cursor {
+        font-size: 55px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+/* End  Media Query For Desktop */
+
+.section--primary{
+     background: black;
+     color: blanchedalmond;
+ }
+
+.parallax {
+    background:rgba(0,0,0, 0.3);
+    height: 850px;
+
+}
+.section-0{
+    background: url(https://image.freepik.com/free-photo/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background_1048-11333.jpg)  no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+.section-3{
+    background: url(https://cdn.pixabay.com/photo/2014/12/18/09/40/adult-education-572269_960_720.jpg)  no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+.section-2{
+    background: url(https://c0.wallpaperflare.com/preview/751/2/550/chart-graph-business-finance.jpg)  no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+.section-x{
+    background-color: #666666;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+#contact {
+    background: black;
+}
+
+#contact .form-padding {
+    padding:0px 10px;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
+
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+
+.floating-label-form-group:not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eee;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #697571;
+}
+
+form .floating-label-form-group {
+    background: lightgrey;
+    border: 1px solid #212121;
+    border-radius: 6px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: 0;
+}
+
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}
+
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.img-responsive{
+    height: 80px;
+    width: 80px;
+    align-content: center;
+}
+.carousel-inner img {
+    width: 90%;
+    height: 90%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h2 {
+    font-size: 150%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px black;
+}
+
+.carousel-caption h3 {
+    font-size: 90%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px black;
+    padding-bottom: 1rem;
+}
+
+.social a {
+    font-size: 4.5rem;
+    padding: 3rem;
+}
+
+.fa-facebook {
+    color: darkblue;
+}
+
+.fa-twitter {
+    color: cornflowerblue;
+}
+
+.fa-google-plus-g {
+    color: red;
+}
+
+.fa-instagram {
+    color: blueviolet;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-youtube:hover, .fa-instagram:hover, .fa-google-plus-g:hover, .fa-twitter:hover, .fa-facebook:hover {
+    color: darkgrey;
+}
