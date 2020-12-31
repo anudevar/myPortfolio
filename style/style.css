@@ -59,8 +59,9 @@ h3{
     width: 80%;
 }
 footer{
+    padding-top: 20px;
     padding-bottom: 0px;
-    color: #666666;
+    color: grey;
 }
 .arrow-down{
     width: 100%;
@@ -168,25 +169,6 @@ footer{
 }
 .section-0{
     background: url(https://image.freepik.com/free-photo/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background_1048-11333.jpg)  no-repeat center center fixed;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-}
-.section-3{
-    background: url(https://cdn.pixabay.com/photo/2014/12/18/09/40/adult-education-572269_960_720.jpg)  no-repeat center center fixed;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-}
-.section-2{
-    background: url(https://c0.wallpaperflare.com/preview/751/2/550/chart-graph-business-finance.jpg)  no-repeat center center fixed;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-}
-.section-x{
-    background-color: #666666;
-    background: no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     height: 400px;
@@ -320,13 +302,23 @@ form .floating-label-form-group {
 }
 
 .social a {
-    font-size: 2.5rem;
+    font-size: 1.0rem;
     padding: 3rem;
 }
 
-.fa-facebook, .fa-twitter , .fa-instagram {
-    color: darkblue;
+.fa-facebook, .fa-github , .fa-instagram {
+    color: grey;
 }
 fa-instagram:hover, .fa-google-plus-g:hover, .fa-twitter:hover, .fa-facebook:hover {
     color: darkgrey;
+}
+a{
+    color: grey;
+}
+a:hover{
+    color: darkgrey;
+}
+
+footer p{
+    color: grey;
 }
