@@ -58,7 +58,10 @@ h3{
     margin: 0 10%;
     width: 80%;
 }
-
+footer{
+    padding-bottom: 0px;
+    color: #666666;
+}
 .arrow-down{
     width: 100%;
     margin: 0 auto;
@@ -317,30 +320,13 @@ form .floating-label-form-group {
 }
 
 .social a {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     padding: 3rem;
 }
 
-.fa-facebook {
+.fa-facebook, .fa-twitter , .fa-instagram {
     color: darkblue;
 }
-
-.fa-twitter {
-    color: cornflowerblue;
-}
-
-.fa-google-plus-g {
-    color: red;
-}
-
-.fa-instagram {
-    color: blueviolet;
-}
-
-.fa-youtube {
-    color: red;
-}
-
 fa-instagram:hover, .fa-google-plus-g:hover, .fa-twitter:hover, .fa-facebook:hover {
     color: darkgrey;
 }
