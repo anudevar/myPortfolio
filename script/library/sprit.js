@@ -1,6 +1,10 @@
 $(document).ready(function ($) {
     $('.section--primary').hide();
-    console.log('comes hear');
+    $("#background2").hide();
+    $("#background3").hide();
+    $("#background4").hide();
+    $("#background5").hide();
+    $("#background6").hide();
     // noise grain toggle
     $('a.noiseTest').on('click', function (event) {
         event.preventDefault();
@@ -17,15 +21,36 @@ $(window).scroll(function(event){
         // downscroll code
         console.log("scrolling down");
         $("#about").show();
+        $("#workExperience").show();
+        $("#education").show();
+        $("#skills").show();
+        $("#contact").show();
+        $("#myContactDetails").show();
+        $("#footer").show();
+        $("#background1").show();
+        $("#background2").show();
+        $("#background3").show();
+        $("#background4").show();
+        $("#background5").show();
+        $("#background6").show();
     } else {
         // upscroll code
-        console.log("scrolling down");
+        console.log("scrolling up");
         $("#about").hide();
+        $("#workExperience").hide();
+        $("#education").hide();
+        $("#skills").hide();
+        $("#contact").hide();
+        $("#myContactDetails").hide();
+        $("#footer").hide();
+        $("#background2").hide();
+        $("#background3").hide();
+        $("#background4").hide();
+        $("#background5").hide();
+        $("#background6").hide();
     }
     lastScrollTop = st;
 });
-
-/* Credit to Collin Henderson @ AstralApp.com */
 
 (function() {
     var WIDTH, HEIGHT, canvas, con, g;

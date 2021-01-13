@@ -637,7 +637,7 @@ footer p{
 
 /* Global Styles
   ---------------------------------------------- */
-.about-background {
+.about-background, .background {
     font-family: 'Open Sans', sans-serif;
     background: #0D133A;
     height:100vh;
@@ -649,7 +649,7 @@ footer p{
     overflow: hidden;
     position: relative;
 }
-.about-background {
+.about-background, .background{
     margin: 0;
     line-height: 1.4;
 }
