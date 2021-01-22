@@ -1,58 +1,58 @@
-$(document).ready(function ($) {
-    $('.section--primary').hide();
-    $("#background2").hide();
-    $("#background3").hide();
-    $("#background4").hide();
-    $("#background5").hide();
-    $("#background6").hide();
+$(document).ready(function () {
     // noise grain toggle
     $('a.noiseTest').on('click', function (event) {
         event.preventDefault();
         $('.noise').toggleClass('active');
         $(this).toggleClass('active');
     });
-
 });
 
-let lastScrollTop = 0;
-$(window).scroll(function(event){
-    let st = $(this).scrollTop();
-    if (st > lastScrollTop){
-        // downscroll code
-        console.log("scrolling down");
-        $("#about").show();
-        $("#workExperience").show();
-        $("#education").show();
-        $("#skills").show();
-        $("#contact").show();
-        $("#myContactDetails").show();
-        $("#footer").show();
-        $("#background1").show();
-        $("#background2").show();
-        $("#background3").show();
-        $("#background4").show();
-        $("#background5").show();
-        $("#background6").show();
-    } else {
-        // upscroll code
-        console.log("scrolling up");
-        $("#about").hide();
-        $("#workExperience").hide();
-        $("#education").hide();
-        $("#skills").hide();
-        $("#contact").hide();
-        $("#myContactDetails").hide();
-        $("#footer").hide();
-        $("#background2").hide();
-        $("#background3").hide();
-        $("#background4").hide();
-        $("#background5").hide();
-        $("#background6").hide();
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 150) {
+        if ($(this).scrollTop() > 600)
+            $('#about').stop().fadeOut();
+        else
+            $('#about').stop().fadeIn();
     }
-    lastScrollTop = st;
+    if ($(this).scrollTop() > 700) {
+        if ($(this).scrollTop() > 1200)
+            $('#workExperience').stop().fadeOut();
+        else
+            $('#workExperience').stop().fadeIn();
+    }
+    if ($(this).scrollTop() > 1300) {
+        if ($(this).scrollTop() > 1800)
+            $('#education').stop().fadeOut();
+        else
+            $('#education').stop().fadeIn();
+    }
+    if ($(this).scrollTop() > 1900) {
+        if ($(this).scrollTop() > 2400)
+            $('#skills').stop().fadeOut();
+        else
+            $('#skills').stop().fadeIn();
+    }
+    if ($(this).scrollTop() > 2500) {
+        if ($(this).scrollTop() > 3000)
+            $('#contact').stop().fadeOut();
+        else
+            $('#contact').stop().fadeIn();
+    }
+    if ($(this).scrollTop() > 3100) {
+        if ($(this).scrollTop() > 3600)
+            $('#myContactDetails').stop().fadeOut();
+        else
+            $('#myContactDetails').stop().fadeIn();
+    }
+    if ($(this).scrollTop() > 3700) {
+        if ($(this).scrollTop() > 4200)
+            $('#footer').stop().fadeOut();
+        else
+            $('#footer').stop().fadeIn();
+    }
 });
 
-(function() {
+(function () {
     var WIDTH, HEIGHT, canvas, con, g;
     var pxs = [];
     var rint = 50;
@@ -62,8 +62,8 @@ $(window).scroll(function(event){
         setup(this);
     }
 
-    function setup (container) {
-        var windowSize = function() {
+    function setup(container) {
+        var windowSize = function () {
             WIDTH = container.innerWidth();
             HEIGHT = container.innerHeight();
             canvas = container.find('#sprites');
@@ -72,13 +72,14 @@ $(window).scroll(function(event){
 
         windowSize();
 
-        $(window).resize(function() {
+        $(window).resize(function () {
             windowSize();
         });
 
         con = canvas[0].getContext('2d');
-
-        for (var i = 0; i < 100; i++) {
+        console.log('comehs hear');
+        for (var i = 0; i < 10; i++) {
+            console.log(i);
             pxs[i] = new Circle();
             pxs[i].reset();
         }
@@ -86,7 +87,7 @@ $(window).scroll(function(event){
         requestAnimationFrame(draw);
     }
 
-    function draw () {
+    function draw() {
         con.clearRect(0, 0, WIDTH, HEIGHT);
         con.globalCompositeOperation = "lighter";
 
@@ -114,7 +115,7 @@ $(window).scroll(function(event){
             blink: true
         };
 
-        this.reset = function() {
+        this.reset = function () {
             this.x = (this.s.random ? WIDTH * Math.random() : this.s.xdef);
             this.y = (this.s.random ? HEIGHT * Math.random() : this.s.ydef);
             this.r = ((this.s.rmax - 1) * Math.random()) + 1;
@@ -132,17 +133,16 @@ $(window).scroll(function(event){
             this.s.ydrift *= Math.random() * (Math.random() < 0.5 ? -1 : 1);
         };
 
-        this.fade = function() {
+        this.fade = function () {
             this.rt += this.s.rt;
         };
 
-        this.draw = function() {
+        this.draw = function () {
             var newo, cr;
 
             if (this.s.blink && (this.rt <= 0 || this.rt >= this.hl)) {
                 this.s.rt = this.s.rt * -1;
-            }
-            else if (this.rt >= this.hl) {
+            } else if (this.rt >= this.hl) {
                 this.reset();
             }
 
@@ -163,18 +163,18 @@ $(window).scroll(function(event){
             con.fill();
         };
 
-        this.move = function() {
+        this.move = function () {
             this.x += (this.rt / this.hl) * this.dx;
             this.y += (this.rt / this.hl) * this.dy;
             if (this.x > WIDTH || this.x < 0) this.dx *= -1;
             if (this.y > HEIGHT || this.y < 0) this.dy *= -1;
         };
 
-        this.getX = function() {
+        this.getX = function () {
             return this.x;
         };
 
-        this.getY = function() {
+        this.getY = function () {
             return this.y;
         };
     };

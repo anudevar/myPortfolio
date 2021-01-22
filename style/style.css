@@ -16,21 +16,29 @@ p{
     color: white;
 }
 
-h1{
-    font-family: "Montserrat", "Lato Semibold";
-    font-size: 4em;
-    color: chocolate;
+h1 {
+    font-size: 4rem;
     text-transform: uppercase;
+    background: linear-gradient(40deg, #fdf680 0%,#d6716d 50%, #a0fafb 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    font-weight: bold;
 }
-
 h2{
     font-size: 30px;
-    color: orangered;
     text-transform: uppercase;
+    background: #fdf680;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    font-weight: bold;
 }
 h3{
     font-size: 20px;
-    color: darkorange;
+    color: #d6716d;
 }
 
 #typed {
@@ -57,13 +65,15 @@ color: transparent;
     background: transparent;
 }
 #about, #education, #contact, #workExperience, #skills, #myContactDetails, #Social{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    overflow:hidden;
+    display:inline-block;
+    padding:10px;
+    color:black;
     border: white solid;
     border-radius: 15%;
     margin: 0 10%;
     width: 80%;
-    background: #212121;
+    background: transparent;
 }
 footer{
     padding-top: 40px;
@@ -71,115 +81,10 @@ footer{
     color: grey;
 }
 
-#arrow {
-    top: 300px;
-}
-#arrow span {
-    position: absolute;
-    content: "";
-    top: 0px;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: sdb07 2s infinite;
-    animation: sdb07 2s infinite;
-    opacity: 0;
-    box-sizing: border-box;
-}
-#arrow span:nth-of-type(1) {
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-    top: 600px;
-}
-#arrow span:nth-of-type(2) {
-    top: 616px;
-    -webkit-animation-delay: .15s;
-    animation-delay: .15s;
-}
-#arrow span:nth-of-type(3) {
-    top: 632px;
-    -webkit-animation-delay: .3s;
-    animation-delay: .3s;
-
-}
-@-webkit-keyframes sdb07 {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes sdb07 {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-
-/* End Keyframes */
-
-@media (min-width: 360px) {
-    #typed {
-        font-size: 10px;
-    }
-
-    .typed-cursor {
-        font-size: 15px;
-    }
-}
-
-@media (min-width: 540px) {
-    #typed {
-        font-size: 20px;
-    }
-
-    .typed-cursor {
-        font-size: 25px;
-    }
-}
-
-@media (min-width: 768px) {
-    #typed {
-        font-size: 30px;
-    }
-
-    .typed-cursor {
-        font-size: 40px;
-    }
-}
-
-@media (min-width: 992px) {
-    #typed {
-        font-size: 40px;
-    }
-
-    .typed-cursor {
-        font-size: 55px;
-    }
-}
-
-@media (min-width: 1200px) {
-
-}
 /* End  Media Query For Desktop */
 
 .section--primary{
-     background: black;
+     background: transparent;
      color: blanchedalmond;
  }
 
@@ -192,7 +97,7 @@ footer{
 
 
 #contact {
-    background: black;
+    background: transparent;
 }
 
 #contact .form-padding {
@@ -254,27 +159,6 @@ form .floating-label-form-group {
 .btn.active {
     outline: 0;
 }
-
-.scroll-top {
-    z-index: 1049;
-    position: fixed;
-    right: 2%;
-    bottom: 2%;
-    width: 50px;
-    height: 50px;
-}
-
-.scroll-top .btn {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 28px;
-}
-
-.scroll-top .btn:focus {
-    outline: 0;
-}
 .container-fluid {
     display: block;
     flex-wrap: wrap;
@@ -312,23 +196,23 @@ form .floating-label-form-group {
     font-size: 150%;
     text-transform: uppercase;
     text-shadow: 1px 1px 15px black;
-    color: orangered;
+    color: #d6716d;
 }
 
 .carousel-caption h3 {
     font-size: 100%;
     text-shadow: 1px 1px 10px black;
     padding-bottom: 1rem;
-    color: darkorange;
+    color: #a0fafb;
 }
 .carousel-caption p{
     text-align: justify;
 }
 .carousel-caption p span{
-    color: orange;
+    color: #d6716d;
 }
 span{
-    color: orange;
+    color: #d6716d;
 }
 .social a {
     font-size: 1.0rem;
@@ -1802,8 +1686,25 @@ a{color: white;text-decoration: none;}
     .about-background:before{content:'Aspect ratio out of range - too narrow';color: white;text-align: center;width: 100%;height: 100%;display: block;position: absolute;top: 50%;}
     #sky, #reflection, #sunMask, #landscape, #bottom, #stag, .controls, .stars, .sunMask, .clouds, .lighting, .vignette, .twinkleWrap,.spriteWrap{display: none;}
 }
+@media only screen and (max-width: 600px) {
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 
 
-
-
-
+}
