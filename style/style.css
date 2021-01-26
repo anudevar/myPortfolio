@@ -9,31 +9,16 @@ html {
     scroll-behavior: smooth;
     background-color: black;
 }
-body{
-    background-color: black;;
-}
+
 p{
     color: white;
 }
 
-h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    background: linear-gradient(40deg, #fdf680 0%,#d6716d 50%, #a0fafb 100%);
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-    font-weight: bold;
-}
+
 h2{
     font-size: 30px;
     text-transform: uppercase;
-    background: #fdf680;
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+    color: #fdf680;
     font-weight: bold;
 }
 h3{
@@ -41,39 +26,10 @@ h3{
     color: #d6716d;
 }
 
-#typed {
-    font-size: 40px;
-    color: black;
-}
 
-.typed-cursor {
-    font-size: 60px;
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-color: transparent;
-}
-
-#info {
-    position: fixed;
-    top:50px;
-    left: 0px;
-    width: 50%;
-    text-align: left;
-    padding-left: 0;
-    background: transparent;
-}
 #about, #education, #contact, #workExperience, #skills, #myContactDetails, #Social{
-    overflow:hidden;
-    display:inline-block;
-    padding:10px;
-    color:black;
-    border: white solid;
-    border-radius: 15%;
-    margin: 0 10%;
-    width: 80%;
     background: transparent;
+    color: #0A8FA7;
 }
 footer{
     padding-top: 40px;
@@ -87,14 +43,6 @@ footer{
      background: transparent;
      color: blanchedalmond;
  }
-
-.parallax {
-    background:rgba(0,0,0, 0.3);
-    height: 550px;
-
-}
-
-
 
 #contact {
     background: transparent;
@@ -875,14 +823,32 @@ a{color: white;text-decoration: none;}
 
 /* Vignette
   ---------------------------------------------- */
-.vignette{
-    background: radial-gradient(transparent 60%, rgb(1, 14, 39) 130%);
-    background-size: cover;
-    height: 100%;
-    z-index: 9;
+.scroll{
+    background: transparent;
+    width:90%;
+    height:1500px;
     position: absolute;
-    width: 100%;
-    pointer-events: none;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin: auto;
+}
+
+.background{
+    background: rgba(25, 25, 25, .5);
+    opacity:80;
+    width:80%;
+    height:80%;
+    overflow: auto;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin: auto;
 }
 
 /* Stars

@@ -7,51 +7,6 @@ $(document).ready(function () {
     });
 });
 
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 150) {
-        if ($(this).scrollTop() > 600)
-            $('#about').stop().fadeOut();
-        else
-            $('#about').stop().fadeIn();
-    }
-    if ($(this).scrollTop() > 700) {
-        if ($(this).scrollTop() > 1200)
-            $('#workExperience').stop().fadeOut();
-        else
-            $('#workExperience').stop().fadeIn();
-    }
-    if ($(this).scrollTop() > 1300) {
-        if ($(this).scrollTop() > 1800)
-            $('#education').stop().fadeOut();
-        else
-            $('#education').stop().fadeIn();
-    }
-    if ($(this).scrollTop() > 1900) {
-        if ($(this).scrollTop() > 2400)
-            $('#skills').stop().fadeOut();
-        else
-            $('#skills').stop().fadeIn();
-    }
-    if ($(this).scrollTop() > 2500) {
-        if ($(this).scrollTop() > 3000)
-            $('#contact').stop().fadeOut();
-        else
-            $('#contact').stop().fadeIn();
-    }
-    if ($(this).scrollTop() > 3100) {
-        if ($(this).scrollTop() > 3600)
-            $('#myContactDetails').stop().fadeOut();
-        else
-            $('#myContactDetails').stop().fadeIn();
-    }
-    if ($(this).scrollTop() > 3700) {
-        if ($(this).scrollTop() > 4200)
-            $('#footer').stop().fadeOut();
-        else
-            $('#footer').stop().fadeIn();
-    }
-});
-
 (function () {
     var WIDTH, HEIGHT, canvas, con, g;
     var pxs = [];
@@ -77,7 +32,7 @@ $(window).scroll(function() {
         });
 
         con = canvas[0].getContext('2d');
-        console.log('comehs hear');
+
         for (var i = 0; i < 10; i++) {
             console.log(i);
             pxs[i] = new Circle();
@@ -92,6 +47,7 @@ $(window).scroll(function() {
         con.globalCompositeOperation = "lighter";
 
         for (var i = 0; i < pxs.length; i++) {
+            console.log(i);
             pxs[i].fade();
             pxs[i].move();
             pxs[i].draw();

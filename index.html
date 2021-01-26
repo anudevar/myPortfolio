@@ -17,10 +17,10 @@
           rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <script src="./script/library/jquery-3.5.1.min.js"></script>
-    <script src="script/library/sprit.js"></script>
+
 </head>
 <body>
-<section class="about-background parallax">
+<section class="about-background">
     <!-- Stars -->
     <div class="stars">
         <div class="starWrap starProject">
@@ -1205,7 +1205,6 @@
         <rect id="reflection-rect" x="0" y="0" width="100%" height="100%" style="fill:url(#reflect)"/>
     </svg>
     <!-- end reflection gradient -->
-
     <!-- Landscape -->
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 539.6 174.9"
          enable-background="new 0 0 539.6 174.9" xml:space="preserve" id="landscape">
@@ -2134,8 +2133,390 @@
         </div>
     </div>
 
-    <!-- Vignette -->
-    <div class="vignette"></div>
+
+
+    <div class="background">
+        <div class="scroll" id="scrollData">
+            <!--  Start About section -->
+            <div class="section--primary" id="about">
+                <div class="container-fluid padding">
+                    <div class="row text-center padding">
+                        <h1 class="text-center col-12">About Me</h1>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="text-right me-with"><img src="./images/DSC_7001.jpg" class="me img-responsive"
+                                                                 style="width: 200px; height: 300px"></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-9">
+                            <p class="text-left">My name is <em> Anusha Devareddy.</em><br>I am Front-End Web Developer.
+                                <br> I
+                                am
+                                a
+                                Master graduate in Electrical Engineering and Information Technology.
+                                <br> I gained more knowledge in HTML,
+                                CSS, JavaScript, Jquery, GitHub, MySQL, AjAX and Bootstrap from my previous role. <br>
+                                I love to learn new features in the web development and ready to work with new ideas every
+                                day.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  End About section -->
+            <!-- Start Work Experience section -->
+            <div class="section--primary" id="workExperience">
+                <div class="container-fluid padding">
+                    <div class="row text-center padding">
+                        <h1 class="text-center col-12">Experience</h1>
+                        <div id="slides" class="carousel slide" data-ride="carousel">
+                            <ul class="carousel-indicators">
+                                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                                <li data-target="#slides" data-slide-to="1"></li>
+                                <li data-target="#slides" data-slide-to="2"></li>
+                                <li data-target="#slides" data-slide-to="3"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active col-12">
+                                    <img src="https://wallpapercave.com/wp/wp2055835.jpg">
+                                    <div class="carousel-caption">
+                                        <h2>Master Thesis</h2>
+                                        <h3>Quality assessment of different API's Azure and AWS for face detection, face
+                                            recognition, face emotion detection, and object detection.</h3>
+                                        <p>Development of ML solutions for various use cases in Azure and AWS.
+                                            Performance analysis between different cloud platforms for ML applications done
+                                            on the google cloud platform and
+                                            Integration of 3rd party tools for AI.<br> <br>
+                                            <span>Tools and languages: </span>Python3.7, Jupyter Notebook, Tensorflow 1.10,
+                                            Google cloud
+                                            platform, AWS, Azure, Machine
+                                            Learning, Keras, Neural Network models, Scikit-learn, Pandas, NumPy,
+                                            Matplotlib.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-12">
+                                    <img src="https://wallpapercave.com/wp/wp2055835.jpg">
+                                    <div class="carousel-caption">
+                                        <h2>Work Student</h2>
+                                        <h3>Siemens Mobility, Braunschweig</h3>
+                                        <p>Development of an application for digital tracking of trains availability on
+                                            track.
+                                            Python application for automation of pre-existing application and file system
+                                            management and Technical documentation.<br><br>
+                                            <span>Tools and languages: </span>Python, Batch Script, Microsoft Word, Visio.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-12">
+                                    <img src="https://wallpapercave.com/wp/wp2055835.jpg">
+                                    <div class="carousel-caption">
+                                        <h2>Member of the Project</h2>
+                                        <h3>Webpage Development</h3>
+                                        <p>Development of a Web Application for the Digital Classroom.
+                                            Using PHP for API management.
+                                            Development of MySQL database in Linux server with MySQL and UI with
+                                            JavaScript.
+                                            <br><br>
+                                            <span>Tools and languages: </span>JavaScript, HTML, PHP, CSS, GitHub, MySQL,
+                                            AjAX,Xampp
+                                            software, GitHub.</p>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-12">
+                                    <img src="https://wallpapercave.com/wp/wp2055835.jpg">
+                                    <div class="carousel-caption">
+                                        <h2>Bachelor Thesis</h2>
+                                        <h3>Data Embedding Using Adaptive Pixel Pair Matching</h3>
+                                        <p>Development of a new encryption method for hiding text in pictures.
+                                            Design of an application for steganography with MATLAB.<br><br>
+                                            <span>Tools and languages: </span> MATLAB, Steganalysis Techniques.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Work Experience section -->
+            <!-- Start Education section -->
+            <div class="section--primary" id="education">
+                <div class="container-fluid padding">
+                    <div class="row text-center padding">
+                        <h1 class="text-center col-12">Education</h1>
+                        <div id="slide" class="carousel slide" data-ride="carousel">
+                            <ul class="carousel-indicators">
+                                <li data-target="#slide" data-slide-to="0" class="active"></li>
+                                <li data-target="#slide" data-slide-to="1"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active col-12">
+                                    <img src="https://wallpapercave.com/wp/wp2055835.jpg">
+                                    <div class="carousel-caption">
+                                        <h2>Technische Hochschule Deggendorf</h2>
+                                        <h3> Master of Science(M.sc) Electrical Engineering and Information Technology</h3>
+                                        <h3>specialization: Automation and Power Engineering</h3>
+                                        <p><span>Subjects: </span>Advanced Programming Techniques, Control Engineering,
+                                            Advanced
+                                            Modelling and simulation,
+                                            Signals and Systems, Micro and Nano, Contact less sensors, Automation and
+                                            Industrial Drives
+                                            Knowledge on Matlab.
+                                            Familiar with Neuro Check workshop tool for Digital Image Processing
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item col-12">
+                                    <img src="https://wallpapercave.com/wp/wp2055835.jpg">
+                                    <div class="carousel-caption">
+                                        <h2>Jawaharlal Nehru Technological University, Anantapur</h2>
+                                        <h3> Bachelors in Electronics and Communication Engineering</h3>
+                                        <p><span>Subjects:</span> MATlab,Micro Processor & Micro Controller,
+                                            Embedded systems,
+                                            Signals and
+                                            Systems,SIMULINK, microprocessor and mircocontroller, VLSI design, micro- and
+                                            nano-electronics,
+                                            signals and systems, electronic devices and circuits, electronic circuit
+                                            analysis,
+                                            circuit
+                                            theory and logic design.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Education section -->
+            <!-- Start Skills section -->
+            <div class="section--primary" id="skills">
+                <div class="container-fluid padding">
+                    <div class="row text-center padding">
+                        <h1 class="text-center col-12">My Skills</h1>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="text"><h3>My creative skills & experiences.</h3></div>
+                            <p class="text-left">
+                                <br>
+                                <br>
+                                <span>Databases: </span>MySQL, Microsoft SQL Server.</br>
+                                <span>Operating systems: </span>Linux, Windows, Mac.</br>
+                                <span>Version Control:</span> Git, Bitbucket</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="text"><h3>My programming skills</h3></div>
+                            <div class="progress">
+                                <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 60%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                >
+                                    python
+                                </div>
+                            </div>
+                            </br>
+                            <div class="progress">
+                                <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 60%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                >
+                                    C
+                                </div>
+                            </div>
+                            </br>
+                            <div class="progress">
+                                <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 55%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                >
+                                    C++
+                                </div>
+                            </div>
+                            </br>
+                            <div class="progress">
+                                <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 70%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                >
+                                    JavaScript
+                                </div>
+                            </div>
+                            </br>
+                            <div class="progress">
+                                <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 70%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                >
+                                    MatLab
+                                </div>
+                            </div>
+                            </br>
+                            <div class="progress">
+                                <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 85%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                >
+                                    HTML
+                                </div>
+                            </div>
+                            </br>
+                            <div class="progress">
+                                <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 80%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                >
+                                    Css
+                                </div>
+                            </div>
+                            </br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Skills section -->
+            <!-- Start Contact section -->
+            <div class="section--primary" id="contact">
+                <div class="container-fluid padding">
+                    <div class="row text-center padding">
+                        <h1 class="text-center col-12">Contact Form</h1>
+                        <div class="center_contact">
+                            <div class="container_contact">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form_contact form__1">
+                                        <label for="name" class="form__label">Full name</label>
+                                        <input type="text" class="form__input" placeholder="" id="name" required>
+                                    </div>
+                                    <br><br>
+                                    <div class="form_contact form__2">
+                                        <label for="email" class="form__label">Email address</label>
+                                        <input type="email" class="form__input" placeholder="" id="email" required>
+                                    </div>
+                                    <br><br>
+                                    <div class="form_contact form__3">
+                                        <label for="message" class="form__label">Your message</label>
+                                        <input type="text" class="form__input" placeholder="" id="message" required>
+                                    </div>
+                                    <br>
+                                    <button class="form__btn">
+        <span class="form__btn--visible"><p>Submit</p>
+          <i class="material-icons" style="font-size: 24px">arrow_forward</i>
+        </span>
+                                        <span class="form__btn--invisible">Message sent!</span>
+                                    </button>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="container-mail">
+                                        <div class="mail_contact">
+                                            <div class="mail__back"></div>
+                                            <div class="mail__top"></div>
+                                            <div class="mail__letter">
+                                                <div class="mail__letter-square">
+                                                </div>
+                                                <div class="mail__letter-lines">
+                                                </div>
+                                            </div>
+                                            <div class="mail__left"></div>
+                                            <div class="mail__right"></div>
+                                            <div class="mail__bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Contact me section -->
+            <div class="section--primary" id="myContactDetails">
+                <div class="container-fluid padding">
+                    <div class="row text-center padding">
+                        <div class="row text-center padding">
+                            <h1 class="text-center col-12">Contact Info</h1>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="contact-item">
+                                    <div class="icon"><i class="fas fa-phone-alt" style="font-size: 3rem"></i></div>
+                                    <br>
+                                    <div class="contact-info">
+                                        <h2>Phone</h2>
+                                        <p>+49 17656716489</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="contact-item ">
+                                    <div class="icon"><i class="fas fa-envelope" style="font-size: 3rem"></i></div>
+                                    <br>
+                                    <div class="contact-info">
+                                        <h2>Email</h2>
+                                        <p>anushareddy2911@gmail.com</p>
+                                        <p>anushaDevareddy@gmx.de</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="contact-item ">
+                                    <div class="icon"><i class="fas fa-map-marker-alt" style="font-size: 3rem"></i>
+                                    </div>
+                                    <br>
+                                    <div class="contact-info">
+                                        <h2>Address</h2>
+                                        <p>
+                                            Frankfurter straße 46,<br>
+                                            34121 Kassel
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact me section -->
+            <!-- Footer -->
+            <div class="section--primary footer" id="footer">
+                <div>
+                    <br>
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <div class="social padding">
+                            <a href="https://www.facebook.com/anusha.reddy.54966834"><i class="fab fa-facebook"></i></a>
+                            <a href="https://github.com/anusha2911/"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/anusha_2911/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/anusha-devareddy-35522554/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <br>
+                        <p class="col-xs-12 col-sm-12 col-md-12 text-center"> Copyright © 2020 AnushaDevareddy. All rights
+                            reserved</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer -->
+        </div>
+    </div>
 
     <!-- Sun on lake twinkles -->
     <div class="twinkleWrap">
@@ -2191,412 +2572,18 @@
     <!-- control panel -->
     <div class="controls">
         <ul>
-            <li><a href="#" class="noiseTest">Noise</a></li>
-            <li><a href="javascript:history.go(0)">Refresh</a></li>
-            <li>
-                <span class="title">Audio</span>
-                <audio loop controls autoplay id="player">
-                    <source src="https://louie.co.nz/25th_hour/audio/Singing_Bowls_Throat.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#workExperience">Work Experience</a></li>
+            <li><a href="#education">Education</a></li></li>
+            <li><a href="#skills">Skills</a></li></li>
+            <li><a href="#contact">contact form</a></li></li>
+            <li><a href="#myContactDetails">Contact Details</a></li></li>
         </ul>
         <div class="counter"></div>
     </div>
 
 </section>
-<section class="scroll" id="scrollData" hidden>
 
-    <!--  Start About section -->
-    <div class="section--primary" id="about">
-        <div class="container-fluid padding">
-            <div class="row text-center padding">
-                <h1 class="text-center col-12">About Me</h1>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="text-right me-with"><img src="./images/DSC_7001.jpg" class="me img-responsive"
-                                                         style="width: 200px; height: 300px"></div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-9">
-                    <p class="text-left">My name is <em> Anusha Devareddy.</em><br>I am Front-End Web Developer.
-                        <br> I
-                        am
-                        a
-                        Master graduate in Electrical Engineering and Information Technology.
-                        <br> I gained more knowledge in HTML,
-                        CSS, JavaScript, Jquery, GitHub, MySQL, AjAX and Bootstrap from my previous role. <br>
-                        I love to learn new features in the web development and ready to work with new ideas every
-                        day.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--  End About section -->
-    <!-- Start Work Experience section -->
-    <div class="section--primary" id="workExperience">
-        <div class="container-fluid padding">
-            <div class="row text-center padding">
-                <h1 class="text-center col-12">Experience</h1>
-                <div id="slides" class="carousel slide" data-ride="carousel">
-                    <ul class="carousel-indicators">
-                        <li data-target="#slides" data-slide-to="0" class="active"></li>
-                        <li data-target="#slides" data-slide-to="1"></li>
-                        <li data-target="#slides" data-slide-to="2"></li>
-                        <li data-target="#slides" data-slide-to="3"></li>
-                    </ul>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active col-12">
-                            <img src="https://wallpapercave.com/wp/wp2055835.jpg">
-                            <div class="carousel-caption">
-                                <h2>Master Thesis</h2>
-                                <h3>Quality assessment of different API's Azure and AWS for face detection, face
-                                    recognition, face emotion detection, and object detection.</h3>
-                                <p>Development of ML solutions for various use cases in Azure and AWS.
-                                    Performance analysis between different cloud platforms for ML applications done
-                                    on the google cloud platform and
-                                    Integration of 3rd party tools for AI.<br> <br>
-                                    <span>Tools and languages: </span>Python3.7, Jupyter Notebook, Tensorflow 1.10,
-                                    Google cloud
-                                    platform, AWS, Azure, Machine
-                                    Learning, Keras, Neural Network models, Scikit-learn, Pandas, NumPy,
-                                    Matplotlib.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-12">
-                            <img src="https://wallpapercave.com/wp/wp2055835.jpg">
-                            <div class="carousel-caption">
-                                <h2>Work Student</h2>
-                                <h3>Siemens Mobility, Braunschweig</h3>
-                                <p>Development of an application for digital tracking of trains availability on
-                                    track.
-                                    Python application for automation of pre-existing application and file system
-                                    management and Technical documentation.<br><br>
-                                    <span>Tools and languages: </span>Python, Batch Script, Microsoft Word, Visio.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-12">
-                            <img src="https://wallpapercave.com/wp/wp2055835.jpg">
-                            <div class="carousel-caption">
-                                <h2>Member of the Project</h2>
-                                <h3>Webpage Development</h3>
-                                <p>Development of a Web Application for the Digital Classroom.
-                                    Using PHP for API management.
-                                    Development of MySQL database in Linux server with MySQL and UI with
-                                    JavaScript.
-                                    <br><br>
-                                    <span>Tools and languages: </span>JavaScript, HTML, PHP, CSS, GitHub, MySQL,
-                                    AjAX,Xampp
-                                    software, GitHub.</p>
-
-                            </div>
-                        </div>
-                        <div class="carousel-item col-12">
-                            <img src="https://wallpapercave.com/wp/wp2055835.jpg">
-                            <div class="carousel-caption">
-                                <h2>Bachelor Thesis</h2>
-                                <h3>Data Embedding Using Adaptive Pixel Pair Matching</h3>
-                                <p>Development of a new encryption method for hiding text in pictures.
-                                    Design of an application for steganography with MATLAB.<br><br>
-                                    <span>Tools and languages: </span> MATLAB, Steganalysis Techniques.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Work Experience section -->
-    <!-- Start Education section -->
-    <div class="section--primary" id="education">
-        <div class="container-fluid padding">
-            <div class="row text-center padding">
-                <h1 class="text-center col-12">Education</h1>
-                <div id="slide" class="carousel slide" data-ride="carousel">
-                    <ul class="carousel-indicators">
-                        <li data-target="#slide" data-slide-to="0" class="active"></li>
-                        <li data-target="#slide" data-slide-to="1"></li>
-                    </ul>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active col-12">
-                            <img src="https://wallpapercave.com/wp/wp2055835.jpg">
-                            <div class="carousel-caption">
-                                <h2>Technische Hochschule Deggendorf</h2>
-                                <h3> Master of Science(M.sc) Electrical Engineering and Information Technology</h3>
-                                <h3>specialization: Automation and Power Engineering</h3>
-                                <p><span>Subjects: </span>Advanced Programming Techniques, Control Engineering,
-                                    Advanced
-                                    Modelling and simulation,
-                                    Signals and Systems, Micro and Nano, Contact less sensors, Automation and
-                                    Industrial Drives
-                                    Knowledge on Matlab.
-                                    Familiar with Neuro Check workshop tool for Digital Image Processing
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-12">
-                            <img src="https://wallpapercave.com/wp/wp2055835.jpg">
-                            <div class="carousel-caption">
-                                <h2>Jawaharlal Nehru Technological University, Anantapur</h2>
-                                <h3> Bachelors in Electronics and Communication Engineering</h3>
-                                <p><span>Subjects:</span> MATlab,Micro Processor & Micro Controller,
-                                    Embedded systems,
-                                    Signals and
-                                    Systems,SIMULINK, microprocessor and mircocontroller, VLSI design, micro- and
-                                    nano-electronics,
-                                    signals and systems, electronic devices and circuits, electronic circuit
-                                    analysis,
-                                    circuit
-                                    theory and logic design.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Education section -->
-    <!-- Start Skills section -->
-    <div class="section--primary" id="skills">
-        <div class="container-fluid padding">
-            <div class="row text-center padding">
-                <h1 class="text-center col-12">My Skills</h1>
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="text"><h3>My creative skills & experiences.</h3></div>
-                    <p class="text-left">
-                        <br>
-                        <br>
-                        <span>Databases: </span>MySQL, Microsoft SQL Server.</br>
-                        <span>Operating systems: </span>Linux, Windows, Mac.</br>
-                        <span>Version Control:</span> Git, Bitbucket</p>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="text"><h3>My programming skills</h3></div>
-                    <div class="progress">
-                        <div
-                                class="progress-bar"
-                                role="progressbar"
-                                style="width: 60%"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                        >
-                            python
-                        </div>
-                    </div>
-                    </br>
-                    <div class="progress">
-                        <div
-                                class="progress-bar"
-                                role="progressbar"
-                                style="width: 60%"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                        >
-                            C
-                        </div>
-                    </div>
-                    </br>
-                    <div class="progress">
-                        <div
-                                class="progress-bar"
-                                role="progressbar"
-                                style="width: 55%"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                        >
-                            C++
-                        </div>
-                    </div>
-                    </br>
-                    <div class="progress">
-                        <div
-                                class="progress-bar"
-                                role="progressbar"
-                                style="width: 70%"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                        >
-                            JavaScript
-                        </div>
-                    </div>
-                    </br>
-                    <div class="progress">
-                        <div
-                                class="progress-bar"
-                                role="progressbar"
-                                style="width: 70%"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                        >
-                            MatLab
-                        </div>
-                    </div>
-                    </br>
-                    <div class="progress">
-                        <div
-                                class="progress-bar"
-                                role="progressbar"
-                                style="width: 85%"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                        >
-                            HTML
-                        </div>
-                    </div>
-                    </br>
-                    <div class="progress">
-                        <div
-                                class="progress-bar"
-                                role="progressbar"
-                                style="width: 80%"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                        >
-                            Css
-                        </div>
-                    </div>
-                    </br>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Skills section -->
-    <!-- Start Contact section -->
-    <div class="section--primary" id="contact">
-        <div class="container-fluid padding">
-            <div class="row text-center padding">
-                <h1 class="text-center col-12">Contact Form</h1>
-                <div class="center_contact">
-                    <div class="container_contact">
-                        <div class="col-xs-12 col-sm-6 col-md-6">
-                            <div class="form_contact form__1">
-                                <label for="name" class="form__label">Full name</label>
-                                <input type="text" class="form__input" placeholder="" id="name" required>
-                            </div>
-                            <br><br>
-                            <div class="form_contact form__2">
-                                <label for="email" class="form__label">Email address</label>
-                                <input type="email" class="form__input" placeholder="" id="email" required>
-                            </div>
-                            <br><br>
-                            <div class="form_contact form__3">
-                                <label for="message" class="form__label">Your message</label>
-                                <input type="text" class="form__input" placeholder="" id="message" required>
-                            </div>
-                            <br>
-                            <button class="form__btn">
-        <span class="form__btn--visible"><p>Submit</p>
-          <i class="material-icons" style="font-size: 24px">arrow_forward</i>
-        </span>
-                                <span class="form__btn--invisible">Message sent!</span>
-                            </button>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6">
-                            <div class="container-mail">
-                                <div class="mail_contact">
-                                    <div class="mail__back"></div>
-                                    <div class="mail__top"></div>
-                                    <div class="mail__letter">
-                                        <div class="mail__letter-square">
-                                        </div>
-                                        <div class="mail__letter-lines">
-                                        </div>
-                                    </div>
-                                    <div class="mail__left"></div>
-                                    <div class="mail__right"></div>
-                                    <div class="mail__bottom"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Start Contact me section -->
-    <div class="section--primary" id="myContactDetails">
-        <div class="container-fluid padding">
-            <div class="row text-center padding">
-                <div class="row text-center padding">
-                    <h1 class="text-center col-12">Contact Info</h1>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="contact-item">
-                            <div class="icon"><i class="fas fa-phone-alt" style="font-size: 3rem"></i></div>
-                            <br>
-                            <div class="contact-info">
-                                <h2>Phone</h2>
-                                <p>+49 17656716489</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="contact-item ">
-                            <div class="icon"><i class="fas fa-envelope" style="font-size: 3rem"></i></div>
-                            <br>
-                            <div class="contact-info">
-                                <h2>Email</h2>
-                                <p>anushareddy2911@gmail.com</p>
-                                <p>anushaDevareddy@gmx.de</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="contact-item ">
-                            <div class="icon"><i class="fas fa-map-marker-alt" style="font-size: 3rem"></i>
-                            </div>
-                            <br>
-                            <div class="contact-info">
-                                <h2>Address</h2>
-                                <p>
-                                    Frankfurter straße 46,<br>
-                                    34121 Kassel
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Contact me section -->
-    <!-- Footer -->
-    <div class="section--primary footer" id="footer">
-        <div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <a clas="text-left" href="#Home">Home</a> <br>
-                    <a clas="text-left" href="#about">About</a><br>
-                    <a clas="text-left" href="#workExperience">Work Experience</a><br>
-                    <a clas="text-left" href="#education">Education</a><br>
-                    <a clas="text-left" href="#skills">Skills</a><br>
-                    <a clas="text-left" href="#contactform">Contact Form</a><br>
-                    <a clas="text-left" href="#myContactDetails">Contact Details</a><br>
-                </div>
-            </div>
-            <br>
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <div class="social padding">
-                    <a href="https://www.facebook.com/anusha.reddy.54966834"><i class="fab fa-facebook"></i></a>
-                    <a href="https://github.com/anusha2911/"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/anusha_2911/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/anusha-devareddy-35522554/"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <br>
-                <p class="col-xs-12 col-sm-12 col-md-12 text-center"> Copyright © 2020 AnushaDevareddy. All rights
-                    reserved</p>
-            </div>
-        </div>
-    </div>
-    <!-- End Footer -->
-</section>
 
 <script src="./script/form.js"></script>
 </body>
