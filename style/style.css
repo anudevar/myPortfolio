@@ -13,7 +13,12 @@ html {
 p{
     color: white;
 }
-
+h1{
+    color: #F3829F;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+}
 
 h2{
     font-size: 30px;
@@ -29,7 +34,10 @@ h3{
 
 #about, #education, #contact, #workExperience, #skills, #myContactDetails, #Social{
     background: transparent;
-    color: #0A8FA7;
+    display: block;
+    align-content: center;
+    width: 100%;
+    padding-left: 10px;
 }
 footer{
     padding-top: 40px;
@@ -48,96 +56,35 @@ footer{
     background: transparent;
 }
 
-#contact .form-padding {
-    padding:0px 0px;
-}
-
-.floating-label-form-group input,
-.floating-label-form-group textarea {
-    z-index: 1;
-    position: relative;
-    padding-right: 0;
-    padding-left: 0;
-    border: 0;
-    border-radius: 0;
-    font-size: 1.0em;
-    background: 0 0;
-    box-shadow: none!important;
-    resize: none;
-}
-
-.floating-label-form-group label {
-    display: block;
-    z-index: 0;
-    position: relative;
-    top: 0em;
-    margin: 0;
-    font-size: .85em;
-    line-height: 1.764705882em;
-    vertical-align: middle;
-    vertical-align: baseline;
-    opacity: 0;
-    -webkit-transition: top .3s ease,opacity .3s ease;
-    -moz-transition: top .3s ease,opacity .3s ease;
-    -ms-transition: top .3s ease,opacity .3s ease;
-    transition: top .3s ease,opacity .3s ease;
-}
-
-.floating-label-form-group:not(:first-child) {
-    padding-left: 14px;
-    border-left: solid #eee;
-}
-
-.floating-label-form-group-with-value label {
-    top: 0;
-}
-
-.floating-label-form-group-with-focus label {
-    color: #697571;
-}
-
-form .floating-label-form-group {
-    background: lightgrey;
-    border:solid #212121;
-    border-radius: 6px;
-}
-
-.btn:focus,
-.btn:active,
-.btn.active {
-    outline: 0;
-}
 .container-fluid {
     display: block;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border-radius: 20%;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
 }
 .img-responsive{
     height: 80px;
     width: 80px;
     align-content: center;
 }
-.carousel-inner img {
+.carousel-inner{
     width: 95%;
-    height: 10%;
-    margin-right: 0;
-    margin-left: 15px;
+    height: 400px;
+}
+.carousel-inner img {
     display: block;
     border-radius: 10%;
     align-content: center;
-
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 
 .carousel-caption {
     position: absolute;
-    top-padding: 30%;
-    transform: translateY(-50%);
+    text-align: center;
 }
 
 .carousel-caption h2 {
@@ -151,16 +98,16 @@ form .floating-label-form-group {
     font-size: 100%;
     text-shadow: 1px 1px 10px black;
     padding-bottom: 1rem;
-    color: #a0fafb;
+    color: #fdf680;
 }
 .carousel-caption p{
     text-align: justify;
 }
 .carousel-caption p span{
-    color: #d6716d;
+    color: #a0fafb;
 }
 span{
-    color: #d6716d;
+    color: #a0fafb;
 }
 .social a {
     font-size: 1.0rem;
@@ -204,7 +151,6 @@ footer p{
     padding-top: 0px;
 }
 .container_contact{
-    background: #373737;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .material-icons {
@@ -223,7 +169,6 @@ footer p{
     display: grid;
     grid-template-columns: repeat(2, minmax(min-content, 10rem));
     align-items: center;
-    background:black;
     padding-left: 10px;
     border-radius: 25px;
     padding-top: 0;
@@ -493,7 +438,7 @@ a{color: white;text-decoration: none;}
 /* Animation globals
   ---------------------------------------------- */
 #landscape, .land, #bottom, .stags,.stag, .counter:before, #lensFlare, .sunMask{
-    animation-duration: 60s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -825,15 +770,20 @@ a{color: white;text-decoration: none;}
   ---------------------------------------------- */
 .scroll{
     background: transparent;
-    width:90%;
-    height:1500px;
+    width:95%;
+    height:90%;
     position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     z-index: 10;
-    margin: auto;
+    display: block;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
 }
 
 .background{
@@ -841,7 +791,6 @@ a{color: white;text-decoration: none;}
     opacity:80;
     width:80%;
     height:80%;
-    overflow: auto;
     position: absolute;
     top:0;
     bottom: 0;
@@ -937,7 +886,7 @@ a{color: white;text-decoration: none;}
     position:absolute;
     top:0px;
     width: 20%;
-    z-index: 10;
+    z-index: 11;
     background: rgba(0, 0, 0, 0.16);
     height: 100%;
     width: 380px;
@@ -1010,27 +959,7 @@ a{color: white;text-decoration: none;}
     opacity: 0.015;
     background-size: 620px;
 }
-.counter{
-    color: rgba(255, 255, 255, 0.12);
-    position: absolute;
-    width: calc(100% - 46px);
-    bottom: 21px;
-    text-align:justify;
-    font-size: 0px;
-}
-.counter:before{
-    content: ':';
-    display:inline-block;
-    position: absolute;
-    animation-name: timer;
-    background: rgba(255, 255, 255, 0.03);
-    text-align: right;
-    left:0px;
-    bottom: 0px;
-    color: transparent;
-    border-right: 1px solid rgba(255, 255, 255, 0.13);
-    line-height: 34px;
-}
+
 @keyframes timer{
     0% { width:0%; }
     100% { width:100%; }
@@ -1652,6 +1581,8 @@ a{color: white;text-decoration: none;}
     .about-background:before{content:'Aspect ratio out of range - too narrow';color: white;text-align: center;width: 100%;height: 100%;display: block;position: absolute;top: 50%;}
     #sky, #reflection, #sunMask, #landscape, #bottom, #stag, .controls, .stars, .sunMask, .clouds, .lighting, .vignette, .twinkleWrap,.spriteWrap{display: none;}
 }
+
+
 @media only screen and (max-width: 600px) {
 
 }
