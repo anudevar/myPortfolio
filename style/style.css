@@ -50,10 +50,15 @@ footer{
 .section--primary{
      background: transparent;
      color: blanchedalmond;
+    height: 750px;
  }
 
 #contact {
     background: transparent;
+}
+#myContactDetails
+{
+    height:500px;
 }
 .carousel {
     width:100%;

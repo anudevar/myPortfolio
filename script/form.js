@@ -25,7 +25,6 @@ $( document ).ready(function() {
 // should start at 0
 
     $('.scroll').scroll(function() {
-        console.log("comes hear");
         var scroll = $('.scroll').scrollTop();
         if(scroll > position) {
             console.log('scrollDown');
