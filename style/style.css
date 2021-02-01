@@ -16,8 +16,8 @@ p{
 h1{
     color: #F3829F;
     text-transform: uppercase;
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 h2{
@@ -55,21 +55,16 @@ footer{
 #contact {
     background: transparent;
 }
-
+.carousel {
+    width:100%;
+}
 .container-fluid {
     display: block;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
-.img-responsive{
-    height: 80px;
-    width: 80px;
-    align-content: center;
-}
+
 .carousel-inner{
-    width: 95%;
-    height: 400px;
+    width: 100%;
 }
 .carousel-inner img {
     display: block;
@@ -77,31 +72,21 @@ footer{
     align-content: center;
     background: transparent;
     width: 100%;
-    height: 100%;
     object-fit: cover;
+    max-height: 500px !important;
 }
-
-
 .carousel-caption {
     position: absolute;
-    text-align: center;
 }
-
 .carousel-caption h2 {
     font-size: 150%;
     text-transform: uppercase;
-    text-shadow: 1px 1px 15px black;
-    color: #d6716d;
-}
-
-.carousel-caption h3 {
-    font-size: 100%;
-    text-shadow: 1px 1px 10px black;
-    padding-bottom: 1rem;
     color: #fdf680;
 }
-.carousel-caption p{
-    text-align: justify;
+.carousel-caption h3 {
+    font-size: 100%;
+    padding-bottom: 1rem;
+    color: #d6716d;
 }
 .carousel-caption p span{
     color: #a0fafb;
@@ -134,7 +119,14 @@ footer{
 footer p{
     color: grey;
 }
-
+.carousel-img{
+    color: #fff;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    opacity: 0.8;
+}
 
 .container_contact, .container_contact::after, .container_contact::before {
     margin: 0;
