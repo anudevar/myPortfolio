@@ -37,8 +37,11 @@ h3{
     display: block;
     align-content: center;
     width: 100%;
-    padding-left: 10px;
 }
+#about{
+    padding-top: 20px;
+}
+
 footer{
     padding-top: 40px;
     padding-bottom: 0px;
