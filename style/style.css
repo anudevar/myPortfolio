@@ -82,16 +82,14 @@ footer {
     width: 100%;
 }
 
-.carousel-inner img {
+
+.carousel-img{
     display: block;
-    border-radius: 10%;
     align-content: center;
     background: transparent;
     width: 100%;
-    object-fit: cover;
-    max-height: 500px !important;
+    height: 100%;
 }
-
 .carousel-caption {
     position: absolute;
 }
