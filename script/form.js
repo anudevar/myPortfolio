@@ -3,11 +3,15 @@
 $( document ).ready(function() {
 
     $('.form__btn').click(function() {
+        $(this).prop("disabled",true);
         $('.mail__letter').toggleClass('move');
         $('.mail__top').toggleClass('closed');
         $('.form__btn--invisible').toggleClass('visible');
         $('.form__btn--visible').toggleClass('invisible');
         $('.form_contact').toggleClass('invisible');
+        $('#name').val("");
+        $('#email').val("");
+        $('#message').val("");
 
     });
 
@@ -33,6 +37,8 @@ $( document ).ready(function() {
         }
         position = scroll;
     });
+
+
 
 });
 
